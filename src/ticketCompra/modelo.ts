@@ -41,3 +41,12 @@ export interface TicketFinal {
   total: ResultadoTotalTicket;
   desgloseIva: TotalPorTipoIva[];
 }
+
+export interface Ivas {
+  general: number;
+  reducido: number;
+  superreducidoA: number;
+  superreducidoB: number;
+  superreducidoC: number;
+  sinIva: number;
+}

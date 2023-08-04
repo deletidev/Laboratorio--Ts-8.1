@@ -14,8 +14,8 @@ export const calculaTicket = (lineasTicket: LineaTicket[]): TicketFinal => {
 
   const lineas = obtenerLineasTiquet(lineasTicket);
   const desgloseIva = totalPorTipoIva(lineasTicket);
-  const totalSinIva = sumarTotalSinIva(lineas);
-  const totalIva = sumarTotalIvas(desgloseIva);
+  const totalSinIva = sumarTotalSinIva(lineasTicket);
+  const totalIva = sumarTotalIvas(lineasTicket);
 
   return {
     lineas,
