@@ -2,6 +2,6 @@ import './style.css';
 import { calculaTicket } from './ticketCompra';
 import { productos } from './productosMocK';
 
-calculaTicket(productos);
+// calculaTicket(productos);
 
 console.log(calculaTicket(productos));
