@@ -92,7 +92,7 @@ export const sumarTotalIvas = (lineasTicket: LineaTicket[]) => {
 
     acc += iva;
 
-    //+acc.toPrecision(3) o Number(acc.toFixed(2)), es necesario para sumar números menores que 0
+    //+acc.toFixed(2) o Number(acc.toFixed(2)), es necesario para sumar números menores que 0
     //y que me devuelva sólo dos decimales, parseInt me devuelve 0
     return Number(acc.toFixed(2));
   }, 0);
