@@ -52,8 +52,7 @@ export const totalPorTipoIva = (
 
   const miro = lineasTicket.reduce((acc, linea: LineaTicket) => {
     const { producto, cantidad } = linea;
-    const precio = producto.precio;
-    const tipoIva = producto.tipoIva;
+    const { precio, tipoIva } = producto;
     const precionSinIva = precio * cantidad;
     const iva = calcularIva(precionSinIva, tipoIva);
 
@@ -85,8 +84,7 @@ export const sumarTotalIvas = (lineasTicket: LineaTicket[]) => {
 
   return lineasTicket.reduce((acc, linea) => {
     const { producto, cantidad } = linea;
-    const precio = producto.precio;
-    const tipoIva = producto.tipoIva;
+    const { precio, tipoIva } = producto;
     const precionSinIva = precio * cantidad;
     const iva = calcularIva(precionSinIva, tipoIva);
 
